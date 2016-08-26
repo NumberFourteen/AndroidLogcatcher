@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LogCatcher</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="cmd_list">
+        <item>Adb Logcat</item>
+        <item>Kernal Kmsg</item>
+        <item>QXDM</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_closed">Close</string>
+
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="running_state">运行状态 : </string>
+	
+	<string name="logcat_main">logcat -b main -v time</string>
+	<string name="logcat_radio">logcat -b radio -v time</string>
+	<string name="logcat_system">logcat -b system -v time</string>
+	<string name="logcat_event">logcat -b event -v time</string>
+
+	<string name="dumpstate">dumpstate</string>
+	<string name="getevent">getevent</string>
+	
+	<string name="kmsg">cat /proc/kmsg</string>
+	
+	<!-- Settings -->
+	
+	<string name="select_sdcard">Select Sdcard</string>
+	<string name="internal_sdcard">Internal Sdcard</string>
+	<string name="external_sdcard">External_Sdcard</string>
+	<string name="cache">Cache(for storage swapping only)</string>
+	
+	<string-array name="sdcard_paths_names">
+	    <item >Internal SDcard</item>
+	    <item >External SDcard</item>
+	    <item >Cache</item>
+	</string-array>
+	
+	<string-array name="sdcard_paths_values">
+	    <item >/sdcard/Logcatcher/</item>
+	    <item >/storage/sdcard1/Logcatcher/</item>
+	    <item >/cache/Logcatcher/</item>
+	</string-array>
+	
+	<string name="sdcard_dialog_message">The Log will be saved in directory you selected!</string>
+	
+	<string name="log_total_size">Total Size(MB)</string>
+	<string name="log_segment_size">Segment Size(MB)</string>
+	<string name="log_size"></string>
+</resources>

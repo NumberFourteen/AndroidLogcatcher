@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/logcat_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/logcat_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logcat_main" />
+
+        <RadioButton
+            android:id="@+id/logcat_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logcat_radio" />
+
+        <RadioButton
+            android:id="@+id/logcat_system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logcat_system" />
+
+        <RadioButton
+            android:id="@+id/logcat_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logcat_event" />
+    </RadioGroup>
+
+    <include 
+        android:id="@+id/logcat_bottom"
+        layout="@layout/model_start"/>
+    
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:dialogTitle="@string/select_sdcard"
+        android:entries="@array/sdcard_paths_names"
+        android:entryValues="@array/sdcard_paths_values"
+        android:key="logcater_settings_path_choices"
+        android:title="@string/select_sdcard" />
+
+    <EditTextPreference
+        android:key="logcater_settings_total_size"
+        android:title="@string/log_total_size"
+        android:defaultValue="1024" />
+    <EditTextPreference
+        android:key="logcater_settings_segment_size"
+        android:title="@string/log_segment_size"
+        android:defaultValue="50" />
+
+</PreferenceScreen>
